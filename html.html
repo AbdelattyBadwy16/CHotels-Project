@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/dark_mood.css">
+    <link rel="stylesheet" href="css/slidebar.css">
+    <link rel="stylesheet" href="css/hotels.css">
+    <link rel="icon" href="img/img/logo.png">
+
+    <title>CHotels | Home</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:wght@100;400&display=swap');
+        </style>
+       <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&family=Poor+Story&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:wght@100;400&family=Titan+One&display=swap');
+        </style>
+</head>
+<body>
+
+  <!--start slidebar visable-->
+
+  <div class="slidebar-visable"  id="slide-bar">
+    <div  style="display: flex; justify-content: space-around; align-items: center;">
+    <div class="logo" id="logo"><img src="img/img/logo.png" width="200px"></div>  
+  </div>
+    <div class="list" >
+        <ul>
+            <li class="item"><img src="icon/home_FILL0_wght400_GRAD0_opsz48.png" class="log"><a href="html.html" id="home" >Home</a></li>
+            <li class="item"><img src="img/img/images-removebg-preview (2).png" class="log"><a href="hotels.html" id="services" >Hotels</a></li>
+            <li class="item"><img src="img/img/download-removebg-preview (1).png" class="log"><a href="contact.html" id="contact">contact</a></li>
+            <li class="item"><img src="icon/work_FILL0_wght400_GRAD0_opsz48.png" class="log"><a href="ourteam.html" id="port" >OurTeam</a></li>
+        </ul>
+    </div>
+  </div>
+
+  
+  <!--end slidebar visable-->
+
+  <!--start slidebar menu-->
+
+  <div class="slidebar-menu"  id="slide-bar-menu">
+    <div  style="display: flex; justify-content: space-around; align-items: center;">
+    <div id="menu1" class="menu"><img style="width: 40px;" src="icon/format_list_bulleted_FILL0_wght400_GRAD0_opsz48.png"></div>
+    <div class="logo" id="logo"><img src="img/img/logo.png" width="200px"></div>  
+  </div>
+    <div class="list" >
+        <ul>
+            <li class="item"><img src="icon/home_FILL0_wght400_GRAD0_opsz48.png" class="log" ><a href="html.html" id="home" class="list-menu">Home</a></li>
+            <li class="item"><img src="img/img/images-removebg-preview (2).png" class="log"><a href="hotels.html" id="services" >Hotels</a></li>
+            <li class="item"><img src="img/img/download-removebg-preview (1).png" class="log"><a href="contact.html" id="contact">contact</a></li>
+            <li class="item"><img src="icon/work_FILL0_wght400_GRAD0_opsz48.png" class="log"><a href="ourteam.html" id="port" class="list-menu">OurTeam</a></li>
+        </ul>
+    </div>
+  </div>
+
+
+  <!--end slidebar menu-->
+
+  
+  <!--start setting-->
+  <div id="setting" class="setting" style="background-color: #f2f2fc; padding: 10px;">
+    <div class="container" style="display: flex;justify-content: space-between;">
+      <div style="display: flex; align-items: center;">  
+      <div class="menu" id="menu2"><img style="width: 40px;" src="icon/format_list_bulleted_FILL0_wght400_GRAD0_opsz48.png"></div>
+      <h1 id="subject">Home</h1>
+    </div>
+    <div style="display: flex; flex-direction: row-reverse; align-items: center;">
+      <a id="show-user" style="text-align: center; color: black; margin-left: 15px;font-weight: bolder ;text-decoration: none; cursor: pointer;" onclick="check_drop()"></a>
+      <div class="dark-mood-section" ><a href="#" ><img id="darkmood" class="darkmood" src="icon/dark_mode_FILL0_wght400_GRAD0_opsz48.png"></a></div>
+      <img  onclick="window.location='yourcarts.html'" src="img/img/shop.png" width="30px" style="cursor: pointer;;margin-right:10px ; border: 1px solid black; border-radius: 50%;">
+    </div>
+    <div id="drop" class="drop" style="margin-top: 50px;">
+      <a href="profile.html">Profile</a>
+      <a href="login.html">Logout</a>
+    </div>
+  </div>
+  </div>
+  <!--end setting-->
+ 
+  <!--start home-->
+  <div class="video_cont">
+  <video autoplay muted loop id="myVideo" style="width:100%" >
+    <source src="img/video/hotel.mp4" type="video/mp4" >
+  </video>
+  <div class="video_text" style="margin: auto;"> 
+    <h1 style="font-size: 80px;">Welcome In CHotels</h1><br>
+   <span id="typing" style="font-size: 40px;"></span> 
+  </div>   
+  </div>
+  
+
+  <!--start About-->
+  <div class="container">
+    <div class="main-heading">
+      <h2>About <span>CHotels</span></h2>
+      <p>Welcome to the tour, we wish you a pleasant journey,Choose your flight from your place to your travelS</p>
+   </div>
+  <div class="about">
+  <div class="text">
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum labore quisquam et debitis?
+     Aperiam, aut aliquam. Reiciendis iste harum molestiae. </p>
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum labore quisquam et debitis?
+      Aperiam, aut aliquam. Reiciendis iste harum molestiae. </p>
+     <ol style="list-style: none;">
+      <li><img src="img/img/images.png" width="50px">Proximity to Campus: Easy access to the university.</li>
+      <li><img src="img/img/images.png" width="50px">Affordable Rates: Competitive pricing for students.</li>
+      <li><img src="img/img/images.png" width="50px">Student-Friendly Amenities: Free Wi-Fi and study areas.</li>
+      <li><img src="img/img/images.png" width="50px">Social Environment: Encourages interaction among students.</li>
+      <li><img src="img/img/images.png" width="50px">Safety and Security: Good security measures in place.</li>
+     </ol>
+  </div>
+  <div class="img">
+  <img src="img/img/hotel1.jpg" width="400px">
+  </div>
+  </div>
+</div>
+
+
+
+<!--Start charestic-->
+<div class="char" id="char"> 
+  <div class="container charestic" style="display: flex; justify-content: space-between;">
+   <div class="icon2">
+    <img style="background-color: #f2f2fc; border-radius: 50%; width: 100px;" src="icon/share_location_FILL0_wght400_GRAD0_opsz48.png">
+    <h1>24</h1>
+    <h4>Destnation</h4>
+   </div>
+   <div class="icon3">
+    <img style="background-color: #f2f2fc; border-radius: 50%; width: 100px;" src="icon/costumer-removebg-preview.png">
+    <h1>1354</h1>
+    <h4>Happy Client</h4>
+   </div>
+  </div>
+  </div>
+
+
+
+<!--Loction-->
+<div class="container">
+  <div class="location">
+   <div class="main-heading">
+      <h2>Your Location</span></h2>
+      <p>Welcome to the tour, we wish you a pleasant journey,Choose your Location to get your hotel</p>
+   </div>
+    <div id="locations" class="cards row" style="justify-content: space-between;"></div>
+  </div>
+</div>
+
+
+
+  <!--end home-->
+ 
+  
+
+
+  
+     <!--start footer-->
+     <footer class="footer">
+      <div class="container">
+      <div class="foot-crad row">
+      <div class="col-md-2">
+      <h3>Jawla</h3>
+      <p>The world has become so fast paced that people don’t
+         want to stand by reading a page of information, 
+         they would much rather look at a presentation and understand 
+         the message. It has to understand the message.</p>
+      </div>
+  
+      <div class="col-md-2">
+      <h3>LINKS</h3>
+      <ul>
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">ABOUT</a></li>
+        <li><a href="#">PACKAGES</a></li>
+        <li><a href="#">HOTELS</a></li>
+        <li><a href="#">TOURS</a></li>
+        <li><a href="#">CONTACT</a></li>
+        <li><a href="#">OUT TEAM</a></li>
+      </ul>
+      </div>
+  
+      <div class="col-md-2">
+      <h3>NEWSLETTER</h3>
+      <p>For business professionals caught between high OEM price and mediocre print and graphic output and to understand the message.</p>
+      <input type="email" placeholder="Email Address">
+      </div>
+  
+    </div>
+    </div>
+  
+      </footer>
+      
+    <div class="footer-end" style="padding: 1px;">
+      <div class="container">
+      <div class="socail" style="padding: 5px;">
+      <p style="margin:4px;">Copyright © All rights reserved.</p>
+      <div>
+        <img src="img/social/face.png" width="25px">
+        <img src="img/social/insta.jpg" width="25px">
+        <img src="img/social/lin.png" width="25px">
+        <img src="img/social/yout.jpg" width="25px">
+      </div>
+    </div>
+      </div>
+    </div>
+      <!--end footer-->
+
+ 
+     <!--js file-->
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/dark_mood_on_home.js"></script>
+    <script src="js/Standard.js"></script>
+    <script src="js/home.js"></script>
+    <script src="js/typing.js"></script>
+    <script src="js/slidebarToggle.js"></script>
+    <script src="js/Services.js"></script>
+</body>
+</html>

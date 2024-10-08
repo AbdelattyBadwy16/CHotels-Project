@@ -1,0 +1,57 @@
+
+.fav-item{
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid black;
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 40px;
+    display: none;
+}
+
+.fav-item img{
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+button{
+    padding: 5px;
+    background-color: #ffca1b;
+    border-radius: 5px;
+}
+
+button:hover{
+    transform: scale(1.05);
+}
+
+
+@media(max-width:1276px){
+    
+    #arc{
+       display: none;
+    }
+
+    #your-card{
+        display: flex;
+        width: 70%;
+        margin: auto;
+        flex-direction: column;
+    }
+
+    #from_to{
+        justify-content: space-between;
+        
+    }
+
+}
+
+
+
+@media(max-width:1000px){
+
+    #fromImg,#toImg{
+      display: none;
+    }
+
+
+}

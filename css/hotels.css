@@ -1,0 +1,196 @@
+.front{
+    width: 100%;
+    height:400px;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../img/img/hotels.jpg");
+    background-position:center;
+    background-size: cover;
+    color: #ffca1b;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.front .elemnt{
+    width:100%;
+    text-align: center;
+}
+.elemnt h2{
+    padding: 15px;
+}
+.form{
+    display: flex;
+    justify-content: space-around;
+    
+}
+.form label{
+    font-size: 20px;
+}
+.form input{
+    background: none;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #ffca1b;
+}
+.form input:hover{
+    border-bottom: 2px solid #ffffff;
+}
+.main-heading{
+    padding: 50px;
+    text-align: center;
+   }
+   .main-heading h2{
+      font-weight: normal;
+      position: relative;
+      font-size: 40px;
+      margin-bottom: 70px;
+      text-transform: uppercase;
+      color: #ffca1b;
+      
+   }
+   .main-heading h2::before,.main-heading-home::before{
+      content: "";
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #333;
+      bottom: -30px;
+      width: 120px;
+      height: 2px;
+   }
+   .main-heading h2::after,.main-heading-home::after{
+      content: "";
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #333;
+      bottom: -37px;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      border: 2px solid #333;
+      background-color: white;
+   }
+   .main-heading p{
+      
+      width: 500px;
+      margin:  0 auto 80px auto;
+      max-width: 100%;
+      line-height: 2;
+      color: #777;
+   }
+   
+
+.main-heading h2::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    bottom: -38px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 2px solid #333;
+    background-color: transparent;
+
+}
+.main-heading h2::before{
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    bottom: -30px;
+    width: 120px;
+    height: 2px;
+
+}
+.cards_tour{
+    width: 100%;
+    margin-bottom: 120px;
+   display: grid;
+   grid-template-columns: repeat(auto-fill,minmax(250px ,1fr ));
+   gap: 20px;
+}
+.cards_tour .card{
+   color: #777;
+  
+   box-shadow: 0 5px 25px rgba(1 1 1 /15%);
+}
+.card h2{
+    font-size: 17px; 
+}
+.card div:not(:last-child)
+{
+    border-bottom: #b8b6b6 solid 1px ;
+}
+.card div:not(:first-child){
+    display: flex;
+    justify-content: center;
+    padding: 12px 0;
+
+}
+.card .d1{
+ display: flex;
+}
+.d1 img{
+    height: 150px;
+}
+
+.card button{
+    background-color: #ffca1b;
+    color: white;
+    border: none;
+    padding: 8px;
+    border-radius: 20px;
+    
+}
+.card button:hover{
+    background-color: white;
+    color: #ffca1b;
+}
+.from{
+    position: relative;
+}
+
+.from::before{
+    content: "";
+    width: 20px;
+    height: 16px;
+    border: 10px solid red;
+    border-color: transparent red transparent transparent;
+    margin-right: 5px;
+    transform: translateX(-5px);
+   
+}
+.to::before{
+    content: "";
+    width: 20px;
+    height: 16px;
+    border: 10px solid green;
+    border-color: transparent green transparent transparent;
+    margin-right: 5px;
+    transform: translateX(-5px);
+    
+   
+}
+@media(max-width:996px)
+{
+ .form{
+    flex-direction: column;
+ }
+ .f1{
+    margin-bottom: 20px;
+ }
+}
+
+.show-end{
+    height: 200px;
+    background-color: #ffca1b;
+    margin-bottom: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}

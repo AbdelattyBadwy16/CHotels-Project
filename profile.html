@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/profile.css">
+    <link rel="stylesheet" href="css/dark_mood.css">
+    <link rel="stylesheet" href="css/slidebar.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <title>CHotels | Profile</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:wght@100;400&display=swap');
+        </style>
+       <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&family=Poor+Story&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:wght@100;400&family=Titan+One&display=swap');
+        </style>
+</head>
+<body   >
+
+   <!--start slidebar visable-->
+
+   <div class="slidebar-visable"  id="slide-bar">
+    <div  style="display: flex; justify-content: space-around; align-items: center;">
+    <div class="logo" id="logo"><img src="img/img/logo.png" width="200px"></div>  
+  </div>
+    <div class="list" >
+        <ul>
+            <li class="item"><img src="icon/home_FILL0_wght400_GRAD0_opsz48.png" class="log"><a href="html.html" id="home" >Home</a></li>
+            <li class="item"><img src="icon/360.png" class="log"><a href="TodayTour.html" id="toDay" >TodayTour</a></li>
+            <li class="item"><img src="img/img/images-removebg-preview (2).png" class="log"><a href="hotels.html" id="services" >Hotels</a></li>
+            <li class="item"><img src="img/img/download-removebg-preview (1).png" class="log"><a href="contact.html" id="contact">contact</a></li>
+            <li class="item"><img src="icon/work_FILL0_wght400_GRAD0_opsz48.png" class="log"><a href="ourteam.html" id="port" >OurTeam</a></li>
+        </ul>
+    </div>
+  </div>
+
+
+  <!--end slidebar visable-->
+
+  <!--start slidebar menu-->
+
+  <div class="slidebar-menu"  id="slide-bar-menu">
+    <div  style="display: flex; justify-content: space-around; align-items: center;">
+    <div id="menu1" class="menu"><img style="width: 40px;" src="icon/format_list_bulleted_FILL0_wght400_GRAD0_opsz48.png"></div>
+    <div class="logo" id="logo"><img src="img/img/logo.png" width="200px"></div>  
+  </div>
+    <div class="list" >
+        <ul>
+            <li class="item"><img src="icon/home_FILL0_wght400_GRAD0_opsz48.png" class="log"><a href="html.html" id="home" class="list-menu">Home</a></li>
+            <li class="item"><img src="icon/360.png" class="log"><a href="TodayTour.html" id="toDay" >TodayTour</a></li>
+            <li class="item"><img src="img/img/images-removebg-preview (2).png" class="log"><a href="tour.html" id="services" >Tours</a></li>
+            <li class="item"><img src="img/img/download-removebg-preview (1).png" class="log"><a href="contact.html" id="contact">contact</a></li>
+            <li class="item"><img src="icon/work_FILL0_wght400_GRAD0_opsz48.png" class="log"><a href="ourteam.html" id="port"class="list-menu" >OurTeam</a></li>
+        </ul>
+    </div>
+  </div>
+
+
+  <!--end slidebar menu-->
+
+  <div class="container">
+  <!--start setting-->
+  <div id="setting" class="setting" style="display: flex; justify-content: space-between; margin-top: 50px;">
+    <div style="display: flex; align-items: center;">  
+        <div class="menu" id="menu2"><img style="width: 40px;" src="icon/format_list_bulleted_FILL0_wght400_GRAD0_opsz48.png"></div>
+        <h1 id="subject">Profile</h1>
+      </div>
+    <div class="data">
+    <a id="show-user" style="text-align: center; color: #ffca1b; margin-left: 15px; text-decoration: none; cursor: pointer;" onclick="check_drop()"></a>
+    <div class="dark-mood-section" ><a href="#" ><img id="darkmood" class="darkmood" src="icon/dark_mode_FILL0_wght400_GRAD0_opsz48.png"></a></div>
+    <img  onclick="window.location='yourcarts.html'" src="img/img/shop.png" width="30px" style="cursor: pointer;;margin-right:10px ; border: 1px solid black; border-radius: 50%;">
+  </div>
+    
+    <div id="drop" class="drop" style="margin-top: 50px;">
+      <a href="profile.html">Profile</a>
+      <a href="login.html">Logout</a>
+    </div>
+  </div>
+  <!--end setting-->
+
+  <!--start Profile-->
+  
+  <div class="profile" >
+       <div class="pro-detalis" style="padding: 10px;">
+       <img src="img/profile/R.png" style="box-shadow: 0 0 20px #d6d1d1;" width="200px" height="200px">
+       <div class="pro-data">
+       
+        <div>
+            <label>UserName : </label>
+            <p id="username_pr"></p>
+        </div>
+
+        <div>
+            <label>Name : </label>
+            <p id="name_pr"></p>
+        </div>
+
+        <div>
+            <label>Email : </label>
+            <p id="email"></p>
+        </div>
+
+        <div>
+            <label>City : </label>
+            <p id="city"></p>
+        </div>
+
+
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+          <div >
+            <label>Balance : </label>
+            <p id="my_money">0$</p>
+          </div>
+          <div style="margin-left: 10px;">
+          <button id="btn_add" style="width: 50px;background-color: #ffca1b;margin-right: 100px;margin-bottom: 15px;">+</button>
+          </div>
+        </div>
+        <button onclick="window.location='changedata.html'" style="width: 100px;background-color: #ffca1b;">ChangeData</button>
+       </div>
+       </div>
+  </div>
+
+
+  <!--ADD MONEY-->
+  <div class="container">
+  <div class="add_mo" id="balance" style="border-radius: 10px; color:black">
+  <div class="card-in" >
+    <label>Enter Card Id</label>
+    <input id="card_id" style="margin-left:20px" type="text">
+  </div>
+  <div class="card-in" >
+    <label>Balance $</label>
+    <input id="money" style="margin-left:20px" type="text">
+  </div>
+  <div style="text-align: center; margin-top: 10px;">
+    <button id="add_balance" style="width: 50px;background-color: #ffca1b;background-color: white; ">ADD</button>
+  </div>
+  <div style="text-align: center; margin: 10px;">
+  <span id="wrong_pro" style=" color: rgb(146, 10, 10);"></span>
+</div>
+  </div>
+</div>
+   
+
+
+  <!--end profile-->
+</div>
+  
+
+ 
+     <!--js file-->
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/dark_mood.js"></script>
+    <script src="js/Standard.js"></script>
+    <script src="js/home.js"></script>
+    <script src="js/profile.js"></script>
+    <script src="js/slidebarToggle.js"></script>
+</body>
+</html>

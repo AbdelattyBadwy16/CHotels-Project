@@ -1,0 +1,116 @@
+/* start contact */
+
+
+
+.call{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.call-item{
+    margin: 20px;
+    text-align: center;
+}
+
+.call-item h4{
+    font-weight: 700;
+    margin: 20px;
+    color: #ffca1b;
+}
+
+.contact h1{
+    font-size:40px;
+    font-weight: bolder;
+    position: relative;
+    margin: 50px 0;
+}
+
+.contact h1::before{
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 10px;
+    border-bottom: solid 5px #ffca1b ;
+    bottom: 0;
+    left: 0;
+
+}
+
+
+
+.contact h1::after{
+    content: "";
+    position: absolute;
+    width: 30px;
+    margin-bottom: -8px;
+    height: 10px;
+    border-bottom: solid 5px #ffca1b ;
+    bottom: 0;
+    left: 0;
+
+}
+
+.text{
+    margin: 100px 0;
+    text-align: center;
+}
+
+.text h4{
+    font-weight: 900;
+    font-size: 40px;
+    color: #ffca1b;
+    margin: 10px;
+}
+
+.text p{
+    font-size: 29px;
+    font-weight: 700;
+}
+
+
+.send-me h2{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    color: #ffca1b;
+    margin: 20px;
+}
+
+.send-me p{
+    text-align: center  ;
+    font-size: 26px;
+    font-weight: 500;
+}
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputs input{
+    width: 60%;
+    height: 60px;
+    border-radius: 20px;
+    outline: none;
+    border: 1px solid #e8dfec;
+    padding: 10px;
+    margin: 20px;
+    
+}
+
+.inputs button{
+    margin: 20px;
+}
+
+.btn{
+    background-color: #ffca1b;
+    color: #e8dfec;
+}
+
+.btn:hover{
+    letter-spacing: 1px;
+}
+/* end contact */

@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    transition: 0.3s;
+    outline: none; 
+}
+
+body{
+    background-color: #f2f2fc;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*class for dark mood*/
+.dark{
+    background-color:#151515;
+    color:white;
+}   
+
+.dark-mood-section a img{
+    width:30px;
+    border-radius: 50%;
+    border: 1px solid #e8dfec;
+}
+

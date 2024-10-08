@@ -1,0 +1,52 @@
+
+
+/*start ourteam*/
+.ourteam-photo .video_cont img{
+    width: 100%;
+    height: 400px;
+}
+
+.ourteam h1{
+    margin: 100px 0;
+}
+
+.items{
+    justify-content: space-between ;
+    align-items: center;
+    
+}
+
+.team-card{
+    border: 1px solid #151515;
+    padding: 0;
+    margin-bottom: 40px;
+    text-align: center;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.team-card:hover{
+    transform: scale(1.05);
+}
+
+.team-card img{
+    width: 80%;
+    height: 200px;
+    border-radius: 50%;
+    margin: 10px;
+}
+.team-card .text{
+    padding: 10px;
+}
+
+
+
+
+@media screen and (max-width : 905px){
+    .team-card h3{
+        font-size: 20px;
+    }
+   
+}
+
+

@@ -1,0 +1,312 @@
+/* start setting */
+
+
+.container{
+    width: 68%;
+    margin-left:25%;
+}
+
+.data{
+    display: flex;
+    flex-direction: row-reverse; 
+    align-items: center;
+}
+
+.drop{
+    position:absolute;
+    margin-top: 5px;
+    right: 200px;
+    background-color:cornsilk;   
+    padding: 10px; 
+    display: flex;
+    flex-direction: column;
+    display: none;
+    z-index: 666;   
+    
+}
+.drop a{
+    margin: 5px 0;
+    text-decoration: none;
+}
+
+.drop a:hover{
+    color:brown;
+}
+
+.video_cont{
+    margin-left: 18%;
+    position: relative;
+    color: #ffca1b;
+   
+}
+
+.video_cont video{
+    position: relative;
+    z-index: -1;
+    filter: brightness(60%);
+    
+}
+
+.video_cont .video_text{
+    position: absolute;
+    top:250px;
+    right: 250px;
+    z-index: 1;
+}
+
+
+
+/*about*/
+
+.about{
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.about .text p{
+    color: #777;
+}
+
+
+.about img{
+    border-radius: 20px;
+}
+
+/*Charstic*/
+
+.char{
+    margin: 80px 0;
+    padding: 20px;
+}
+
+.char img{
+    margin-bottom: 20px;
+}
+
+.icon1,.icon2,.icon3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/*loction*/
+
+.location{
+  margin-top: 100px;
+}
+
+.location h1{
+    font-size: 100px;
+}
+.location .cards{
+    margin: 50px 0px;     
+}
+
+.location .card{
+  margin:  20px;
+}
+
+.location .cards p{
+    color: #777;
+}
+
+.location .card{
+    border-radius: 20px;
+    padding: 0;
+}
+
+.location .card img{
+    border-radius: 20px 20px 0 0;
+}
+
+.location .card:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.location .text{
+  text-align: center;
+  padding: 10px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.location button{
+    background-color: #ffca1b;
+    border: 0;
+    width: 50%;
+    padding: 1px;
+}
+
+.location button:hover{
+    letter-spacing: 2px;
+}
+
+/*Footer*/
+
+.footer{
+    background-color: #0C0C0D;
+    color: white;
+}
+
+.foot-crad{
+    display: flex;
+    justify-content: center;
+}
+
+
+.foot-crad div{
+ margin: 40px;
+}
+
+.foot-crad div h3{
+    margin-bottom: 20px;
+}
+
+.footer p,ul{
+    color: #72A0B2;
+    font-size: 14px;
+    list-style-type: none;
+}
+
+.footer ul a{
+    text-decoration: none;
+    color: #72A0B2;
+    transition: 0.5s;
+    
+}
+
+.footer ul li{
+    text-decoration: none;
+    color: #72A0B2;
+    margin-top: 10px;
+}
+
+.footer ul li a:hover{
+    color: #ffca1b;
+}
+
+
+.footer-end{
+    background-color: black;
+    color: #72A0B2;
+}
+
+
+.socail{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.socail img{
+    border-radius: 50%;
+}
+
+
+/*<!--Start charestic-->*/
+.char{
+    background-color: #151515;
+    color: white;
+}
+
+
+
+
+@media screen and (max-width: 550px) {
+    .footer-end{
+        display: none;
+    }
+  }
+
+@media screen and (max-width : 1274px){
+    .video_cont .video_text{
+        top:250px;
+        right: 200px;
+    }
+    .location h1{
+        font-size: 50px;
+    }
+}
+
+
+@media screen and (max-width : 1195px){
+    .video_cont .video_text{
+        top:250px;
+        right: 100px;
+    }
+    .video_cont{
+        margin-left: 0;
+        position: relative;
+        color: #ffca1b;
+       
+    }
+
+    .about{
+        flex-direction: column;
+    }
+}
+
+
+@media screen and (max-width : 874px){
+    .video_cont .video_text{
+        top:100px;
+        right: 0px;
+    }
+   
+}
+
+@media screen and (max-width : 700px){
+    .video_cont .video_text{
+        top:50px;
+        right: 0px;
+    }
+   
+}
+
+@media screen and (max-width : 600px){
+    .video_cont .video_text{
+       display: none;
+    }
+   
+}
+
+
+@media screen and (max-width : 1240px){
+    .card h3{
+        font-size: 20px;
+    }
+   
+}
+
+
+
+@media screen and (max-width : 860px){
+    .card h3{
+        font-size: 15px;
+    }
+   
+}
+
+
+@media screen and (max-width : 750px){
+    .charestic{
+       flex-direction: column;
+    }
+
+    .charestic .icon1,.icon2,.icon3{
+        margin-bottom: 40px;
+    }
+
+    .dark-mood-section{
+        display: none;
+    }
+
+    #subject{
+        display: none;
+    }
+   
+}

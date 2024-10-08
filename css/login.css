@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.login-page{
+   position: relative;
+}
+.logo{
+   position: absolute;
+   left: 0px;
+   top: 0px;
+   width: 100px;
+   border-radius: 50%;
+}
+.login-page{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.login{
+    display: flex;
+    width: 65%;
+    margin: auto;
+    background-color: rgb(252, 252, 252);
+    border-radius: 10px;
+    box-shadow: 0 0 10px #c5c1c1;
+    
+}
+form{
+    padding: 30px 0;
+}
+.tag1{
+    width: 100%;
+    padding: 50px 20px;
+    border-radius: 10px;
+}
+.tag2 p{
+    width: 80%;
+}
+
+.tag1 h2{
+    color: rgb(231, 30, 30);
+    font-size: 35px;
+    margin-bottom: 25px;
+    text-align: center;
+
+    
+}
+.tag1 a{
+  text-decoration: none;
+  padding: 10px;
+}
+.tag2{
+    padding: 50px 30px;
+    background-position: center center;
+    color: white;
+    background-image: url("../img/img/2.jpg");
+    background-position: center ;
+    
+}
+.tag1 input:not(.ch){
+    background-color: rgb(255, 255, 255);
+    outline: none;
+    border: none;
+    box-shadow: 0 0 10px #c5c1c1;
+    border-radius: 10px;
+    width: 100%;
+    height: 32px;
+    margin-bottom: 15px;
+    padding: 20px;
+    transition: 0.3s;
+   
+    
+
+}
+
+.tag1 input:not(.ch):hover{
+    outline: 1px solid rgb(231, 30, 30);
+}
+.cin{
+    width: 70%;
+    margin: auto;
+}
+.ch:checked+label{
+    color: rgb(231, 30, 30);
+}
+.ch+label{
+    font-weight: 600;
+   
+}
+.cin button{
+    color: white;
+    background-color: rgb(231, 30, 30);
+    transition: 0.3s;
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 10px;
+    margin: 20px 0;
+    box-shadow: 0 0 10px #d6d1d1;
+    border-radius: 10px;
+    font-weight: bold;
+}
+.tag1 button:hover{
+    transform: scale(1.1);
+}
+.tag2 button{
+    color: white;
+    background-color: rgb(207, 205, 205);
+    transition: 0.3s;
+    width:30%;
+    outline: none;
+    border: none;
+    padding: 10px;
+    margin: 20px 0;
+    box-shadow: 0 0 10px #c5c1c1;
+    border-radius: 10px;
+}
+
+.tag2 button:hover{
+    transform: scale(1.1);
+}
+.tag2 h2{
+    margin: 70px 0 20px 0;
+
+}
+.tag2{
+    font-weight: 500;
+}
+@media(max-width:986px){
+    .tag2{
+       display: none;
+    }
+    .tag1{
+        width: 100%;
+    }
+    .login{
+        width: 80%;
+    }
+}

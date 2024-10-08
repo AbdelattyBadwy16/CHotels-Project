@@ -1,0 +1,174 @@
+/* Start Body*/
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+/* End Body*/
+
+/* start navbar */
+
+
+.defintion-page{
+    background: url("../image/package/top-banner.jpg") ;
+    background-size: cover;
+    padding: 50px;
+    background-position: center center;
+    position: relative;
+    z-index: -1;
+
+}
+.defintion-page::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(4, 9, 30, 0.4);
+}
+
+.defintion-page .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 50px 0;
+    position: relative;
+}
+
+.navbar a{
+    color: white;
+
+}
+
+.navbar ul li a{
+   font-size: 13px;
+
+}
+
+.navbar a:hover{
+   color: #E00D4E;
+}
+
+.navbar{
+    width: 100%; 
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.8);
+    
+}
+.container-fluid{
+    width: 80%;
+}
+.collapse{
+    justify-content: center;
+    align-items: center;
+}
+
+.collapse ul li{
+    padding: 0 15px 0 15px ;
+}
+/* end navbar */
+
+
+/*start profile*/
+
+.profile{
+    width: 60%;
+    margin: auto;
+    margin:  25px auto 25px auto;
+    box-shadow: 0 0 20px #d6d1d1;
+    border-radius: 20px;
+    height: 500px;
+}
+.pro-data{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+.pro-detalis{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.pro-detalis img{
+    border-radius: 50%;
+    margin-bottom: 50px;
+}
+
+
+.pro-detalis div div{
+    display: flex;
+}
+
+.pro-detalis div div label{
+    margin-right: 10px;
+    font-weight: bolder;
+}
+
+
+/*add_money*/
+
+.add_mo{
+    width: 300px;
+    background-color: #ffca1b;
+    padding: 10px;
+    position: absolute;
+    top:400px;
+    right: 100px;
+    display: none;
+}
+
+.card-in{
+    display: flex; 
+    justify-content: space-between;
+     margin-bottom: 10px;
+}
+@media(max-width:914px){
+       .profile{
+        font-size: 6px;
+        width: 100%;
+       }
+
+       .add_mo
+       {
+        width: 150px;
+       }
+
+       #btn_add{
+        margin-left: 20px ;
+       }
+
+       .card-in{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        bottom: 0;
+       }
+
+    
+}
+
+@media(max-width:653px){
+    .profile{
+     font-size: 9px;
+     width: 100%;
+    }
+    .profile img{
+        width: 100px;
+    }
+    .data{
+        display: none;
+    }
+
+    .setting{
+        text-align: center;
+    }
+
+}

@@ -1,0 +1,86 @@
+
+/* start slide-bar */
+
+.slidebar-visable{
+    width: 19%;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.list ul li{
+    list-style: none; 
+    padding: 10px;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 20px;
+    align-items: center; 
+    border-bottom: 1px solid #b2b1b3;
+
+}
+.list ul li img{
+  width: 30px;
+  margin: 20px;
+}
+ 
+.list ul li a{
+    text-decoration: none;
+    font-weight: 700;
+    color: black;
+}
+
+.list ul li a:hover{
+    color: #ffca1b;
+}
+
+.menu{
+    margin-right: 20px;
+    cursor: pointer;
+    display: none;
+    
+}
+
+.slidebar-menu{
+    display: none;
+}
+
+/* end slide-bar */
+
+@media(max-width:1200px){
+    .slidebar-visable{
+       display: none;
+       text-align: center;
+       margin: auto;
+    }
+
+    .slide-bar-menu ul{
+       text-align: center;
+    }
+
+    .slide-bar-menu{
+        width: 100%;
+        text-align: center;
+        z-index: 9999;
+    }
+
+    .container{
+        width: 68%;
+        margin-top: 20px;
+        margin:auto;
+    }
+
+    .menu{
+        display: block;
+        background-color: white;
+        border-radius: 20%;
+    }
+    
+
+}

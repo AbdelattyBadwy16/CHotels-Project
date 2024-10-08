@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registers Page</title>
+    <link rel="stylesheet" href="css/sgin.css">
+</head>
+<body>
+    <div class="login-page">
+         <img class="logo" src="img/img/logo.png">
+        
+          <div class="login">
+            <div class="tag1" >
+               <h2>Sign Up To Our Service</h2>
+               <form>
+                <div class="l">
+                    <div class="cin">
+                     <input type="text" placeholder="Name" id="name">
+                    </div>
+                    <div class="cin">
+                      <input type="text" placeholder="UserName" id="username">
+                    </div>
+                    <div class="cin">
+                      <input type="email" placeholder="Email" id="email">
+                    </div>
+                </div>
+                <div class="r">
+                  <div class="cin">
+                    <input type="password" placeholder="Password" id="password">
+                  </div>
+                  <div class="cin">
+                    <input type="password" placeholder="confirm Password" id="cpassword">
+                  </div>
+                    <div class="cin">
+                      <select class="dorpdown" id="city">
+                        <option selected>Governorate</option>
+                        <option>Alexandria</option>
+                        <option>Aswan</option>
+                        <option>Asyut</option>
+                        <option>Beheira</option>
+                        <option>Beni Suef</option>
+                        <option>Cairo</option>
+                        <option>Dakahlia</option>
+                        <option>Damietta</option>
+                        <option>Faiyum</option>
+                        <option>Gharbia</option>
+                        <option>Giza</option>
+                        <option>Ismailia</option>
+                        <option>Kafr El Sheikh</option>
+                        <option>Luxor</option>
+                        <option>Matrouh</option>
+                        <option>Minya</option>
+                        <option>North Sinai</option>
+                        <option>Port Said</option>
+                        <option>Qalyubia</option>
+                        <option>Qena</option>
+                        <option>Red Sea</option>
+                        <option>Sharqia</option>
+                        <option>Sohag</option>
+                        <option>South Sinai</option>
+                        <option>Suez</option>
+                    </select>
+                    </div>
+                </div>
+
+               </form>
+               <div class="cin" style="display: flex; justify-content: space-between; width: 90%; margin: auto;">
+                <div>
+                 <input name="check" type="checkbox" class="ch" id="check">
+                 <label for="check" style="font-size: 20px;cursor: pointer;">I Am Not A Robot</label>
+                </div>  
+                 <a href="login.html" style="font-size: 20px; color: black;">I already have account</a>
+              </div>
+              <div class="cin" >
+                <button id="sub_btn" style="width: 90%; margin:20px 5%;">Register</button>
+             </div>
+             <p style="color: red;" align="center" id="warning"></p>
+
+            </div>
+             </div>
+           
+        </div>
+    </div>
+
+    <script src="js/register.js"></script>
+</body>
+</html>
