@@ -161,7 +161,7 @@ function search() {
                   <h2>PRICE | ${data[i].price_per_night}$ per night</h2>
                 </div>
                 <div class="but">
-                  <button onclick='handelClick(${data[i].name})' class="book" style="font-weight:bolder">SHOW MORE</button>
+                  <button onclick='handelClick(${i})' class="book" style="font-weight:bolder">SHOW MORE</button>
                 </div>
             </div>
             `;

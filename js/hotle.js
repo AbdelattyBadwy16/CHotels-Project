@@ -103,11 +103,11 @@ let data = [
 const sec = document.getElementById("contactsec");
 
 let cur = localStorage.getItem("hotedID");
-    for(let i = 0  ; i<data.length ; i++){
-        if(data[i].name == cur){
-            cur = data[i];
-        }
+for(let i = 0  ; i<data.length ; i++){
+    if(data[i].name == cur){
+        cur = data[i];
     }
+}
 
 sec.innerHTML += `
         <h1 id="hotel_name">${cur.name}</h1>
@@ -117,14 +117,83 @@ sec.innerHTML += `
         <div style="display:flex;flex-direction: row;justify-content: space-between;margin-top:30px">
          <div style="display:flex;gap:10px">
             <h2>from : </h2>
-            <input type="date" style="border-radius:8px;padding:5px;" >
+            <input id="start_date" onchange="handelChange()" type="date" style="border-radius:8px;padding:5px;" >
          </div>
          <div style="display:flex;gap:10px">
-            <h2>to : </h2>
-            <input type="date" style="border-radius:8px;padding:5px;">
+            <h2>Number of Nights : </h2>
+            <input id="n_days" type="number" onchange="handelChange()" value='1' style="border-radius:8px;padding:5px;">
          </div>
         </div>
         <div style="display:flex;flex-direction: row;justify-content: space-between;margin-top:30px">
-         <h2>Total Price : </h2>
+         <h2 id="total_price">Total Price : </h2>
+            <div>
+                <button onclick="handelBook()" style="padding:5px;background-color:#ffca1b; border-radius:5px; font-weigth:bolder;font-size:20px;">Book Now</button>
+            </div>
         </div>
+        <div style="color:red" id="error"></div>
+        
         `
+
+
+
+
+function handelChange(){
+    const choosedDay = document.getElementById("start_date");   
+    const number_of_nights = document.getElementById("n_days");
+    const total = document.getElementById("total_price");
+    if(number_of_nights.value<1){
+        number_of_nights.value = 1;
+    }
+    if(!choosedDay.value)return;
+    total.innerHTML ="Total Price : "+ cur.price_per_night * (+number_of_nights.value) + ' $';
+}
+
+
+function handelBook(){
+    // get Fields
+    const choosedDay = document.getElementById("start_date");  
+    const number_of_nights = document.getElementById("n_days");
+    const error = document.getElementById("error");
+    // check validate
+    if(!choosedDay.value){
+        error.innerHTML = "Please choose a starting day."
+        return;
+    }
+
+
+    // get data from localstorage
+    let user = localStorage.getItem("username");
+    let data;
+    if (localStorage.users != null) {
+        data = JSON.parse(localStorage.users);
+    } else {
+        data = [];
+    }
+    
+    for(let i = 0 ; i<data.length ; i++){
+        if(data[i].username == user){
+            const total = cur.price_per_night * (+number_of_nights.value);
+            if(data[i].balance<total){
+                error.innerHTML = "Your balance is less than the total price."
+                return;
+            }
+            data[i].balance -= total;
+            break;
+        }
+    }
+    
+
+    error.innerHTML = ""
+
+    // get data from localstorage
+    let BookingData;
+    if (localStorage.bookingData != null) {
+        BookingData = JSON.parse(localStorage.bookingData);
+    } else {
+        BookingData = [];
+    } 
+    BookingData.push({user : user,hotel : cur,check_in : choosedDay.value , number_of_nights : number_of_nights.value , room : Math.floor(Math.random() * 150)});
+    alert("Hotel Booked Succssfully.");
+    localStorage.setItem("bookingData",JSON.stringify(BookingData));
+    localStorage.setItem("users",JSON.stringify(data));
+}
