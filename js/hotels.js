@@ -141,8 +141,10 @@ function search() {
     if (!name.length && !goverment.length) return;
     
     cards.innerHTML = "";
+    let cnt = 0;
     for (let i = 0; i < data.length; i++) {
         if (data[i].name.toLowerCase().includes(name.toLowerCase()) && data[i].location.toLowerCase().includes(goverment.toLowerCase())) {
+            cnt++;
             var card = `
             <div class="card">
                 <div class="d1">
@@ -167,6 +169,9 @@ function search() {
             `;
             cards.innerHTML += card;
         }
+    }
+    if(!cnt){
+      cards.innerHTML = "<h1 style='color:red;width:100%;marign:auto'>No Items.</h1>"
     }
 }
 

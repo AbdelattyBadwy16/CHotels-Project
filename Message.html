@@ -23,13 +23,13 @@
 
    <div class="slidebar-visable"  id="slide-bar">
     <div  style="display: flex; justify-content: space-around; align-items: center;">
-    <div class="logo" id="logo"><img src="img/img/logo.png" width="200px"></div>  
+        <div class="logo" id="logo"></div>  
   </div>
     <div class="list" >
         <ul>
-            <li class="item"><img src="icon/home_FILL0_wght400_GRAD0_opsz48.png" class="log"><a href="html.html" id="home" >Home</a></li>
-            <li class="item"><img src="img/img/images-removebg-preview (2).png" class="log"><a href="hotels.html" id="services" >Hotels</a></li>
-            <li class="item"><img src="img/img/download-removebg-preview (1).png" class="log"><a href="contact.html" id="contact">contact</a></li>
+            <li class="item"><img src="icon/home_FILL0_wght400_GRAD0_opsz48.png" class="log"><a href="dashbord.html" id="home" >Dashboard</a></li>
+            <li class="item"><img src="img/img/images-removebg-preview (2).png" class="log"><a href="Books.html" id="services" >Books</a></li>
+            <li class="item"><img src="img/img/download-removebg-preview (1).png" class="log"><a href="Message.html" id="contact">Message</a></li>
             <li class="item"><img src="icon/work_FILL0_wght400_GRAD0_opsz48.png" class="log"><a href="ourteam.html" id="port" >OurTeam</a></li>
         </ul>
     </div>
@@ -43,14 +43,14 @@
   <div class="slidebar-menu"  id="slide-bar-menu">
     <div  style="display: flex; justify-content: space-around; align-items: center;">
     <div id="menu1" class="menu"><img style="width: 40px;" src="icon/format_list_bulleted_FILL0_wght400_GRAD0_opsz48.png"></div>
-    <div class="logo" id="logo"><img src="img/img/logo.png" width="200px"></div>  
+    <div class="logo" id="logo"></div>  
   </div>
     <div class="list" >
-        <ul>
-            <li class="item"><img src="icon/home_FILL0_wght400_GRAD0_opsz48.png" class="log"><a href="html.html" id="home" class="list-menu">Home</a></li>
-            <li class="item"><img src="img/img/images-removebg-preview (2).png" class="log"><a href="hotels.html" id="services" >Hotels</a></li>
-            <li class="item"><img src="img/img/download-removebg-preview (1).png" class="log"><a href="contact.html" id="contact">contact</a></li>
-            <li class="item"><img src="icon/work_FILL0_wght400_GRAD0_opsz48.png" class="log"><a href="ourteam.html" id="port"class="list-menu" >OurTeam</a></li>
+        <ul>  
+            <li class="item"><img src="icon/home_FILL0_wght400_GRAD0_opsz48.png" class="log"><a href="dashbord.html" id="home" >Dashboard</a></li>
+            <li class="item"><img src="img/img/images-removebg-preview (2).png" class="log"><a href="Books.html" id="services" >Books</a></li>
+            <li class="item"><img src="img/img/download-removebg-preview (1).png" class="log"><a href="Message.html" id="contact">Message</a></li>
+            <li class="item"><img src="icon/work_FILL0_wght400_GRAD0_opsz48.png" class="log"><a href="ourteam.html" id="port" >OurTeam</a></li>
         </ul>
     </div>
   </div>
@@ -63,7 +63,7 @@
       <div id="setting" class="setting" style="display: flex; justify-content: space-between; align-items: center;padding: 10px;">
       <div style="display: flex; align-items: center;">  
       <div class="menu" id="menu2"><img style="width: 40px;" src="icon/format_list_bulleted_FILL0_wght400_GRAD0_opsz48.png"></div>
-      <h1 id="subject">YourCard</h1>
+      <h1 id="subject">Messages</h1>
     </div>
         <div style="display: flex; flex-direction: row-reverse; align-items: center;">
         <a id="show-user" style="text-align: center; color: #ffca1b; margin-left: 15px; text-decoration: none; cursor: pointer;" onclick="check_drop()"></a>
@@ -81,8 +81,18 @@
 
        
        <!--start carts-->
-   <div id="cards" class="container" style="height: 100vh;">
-      
+   <div id="cards" class="container" style="height: 60vh; padding: 10px;width: 100%;;">
+    <h1 style="text-align: center; margin: 35px 0">South Valley University</h1>
+    <table border="1" style="padding: 5px;margin: auto; width: 100%;">
+        <tr style="padding: 5px;">
+            <th style="padding:15px;">id</th>
+            <th style="padding:15px;">Client</th>
+            <th style="padding:15px;">Room</th>
+            <th style="padding:15px;">Check_in</th>
+            <th style="padding:15px;">Check_out</th>
+            <th style="padding:15px;">Cost</th>
+        </tr>
+    </table>
   </div>
 
 
@@ -146,6 +156,5 @@
     <script src="js/dark_mood.js"></script>
     <script src="js/profilelist.js"></script>
     <script src="js/slidebarToggle.js"></script>
-    <script src="js/showCarts.js"></script>
 </body>
 </html>
