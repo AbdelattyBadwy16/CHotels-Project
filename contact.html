@@ -22,7 +22,6 @@
 
    <div class="slidebar-visable"  id="slide-bar">
     <div  style="display: flex; justify-content: space-around; align-items: center;">
-    <div class="logo" id="logo"><img src="img/img/logo.png" width="200px"></div>  
   </div>
     <div class="list" >
         <ul>
@@ -122,13 +121,13 @@
   <div class="send-me">
    <h2>SEND Us AN EMAIL</h2>
    <p>We Are VERY RESPONSIVE TO MESSAGES</p>
-   <div class="inputs">
-    <input type="text" placeholder="Name">
-    <input type="email" placeholder="Email">
-    <input type="text" placeholder="Subject">
-    <input type="text" placeholder="Message">
-    <button class="btn">SEND MESSAGE</button>
-   </div>
+   <form class="inputs" id="contactForm">
+    <input required id="contactName" type="text" placeholder="Name">
+    <input required id="contactEmail" type="email" placeholder="Email">
+    <input required id="contactSubject" type="text" placeholder="Subject">
+    <input required id="contactMessage" type="text" placeholder="Message">
+    <button class="btn" style="color:black;font-weight: bolder;">SEND MESSAGE</button>
+   </form>
   </div>
 </div>
 
@@ -193,7 +192,7 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/dark_mood.js"></script>
     <script src="js/profilelist.js"></script>
-     <script src="js/slidebarToggle.js"></script>
-
+    <script src="js/slidebarToggle.js"></script>
+    <script src="js/Contact.js"></script>
 </body>
 </html>

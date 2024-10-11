@@ -76,7 +76,7 @@ function CalculateClients(){
 
 
 
-function CalculateMessagesPerDay(){
+function CalculateMessages(){
     const date = new Date();
     let CurDate = `${date.getFullYear()}-${date.getMonth()+1}-${date.getDate()}`;
     
@@ -88,13 +88,9 @@ function CalculateMessagesPerDay(){
         message = [];
     } 
     
-    let Messages = 0;
+    let Messages = message.length;
 
-    for(let i=0 ; i<message.length ; i++){
-        if(message[i].date == CurDate){
-            Messages++;      
-        }
-    }
+
     
     Message.innerHTML = Messages ;
 }
@@ -105,4 +101,4 @@ function CalculateMessagesPerDay(){
 CalculateTotalMoneyPerDay();
 CalculateTotalBooksPerDay();
 CalculateClients();
-CalculateMessagesPerDay();
+CalculateMessages();
